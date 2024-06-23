@@ -4,11 +4,11 @@ import NoteCardContainer from '../components/NoteCardContainer'
 
 
 
-const HomePage = () => {
+const HomePage = ({notes, loading}) => {
   return (
     <>
     <Filter />
-    <NoteCardContainer />
+    <NoteCardContainer notes={notes} loading={loading}/>
     </>
   )
 }
